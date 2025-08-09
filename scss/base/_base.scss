@@ -1,0 +1,414 @@
+@mixin flex-direccion($flex-dir) {
+    flex-direction: $flex-dir;
+}
+
+.main-conteiner {
+    display: flex;
+    @include flex-direccion(column);
+    min-height: 85vh;
+    text-align: center;
+}
+
+.section-quienessomos {
+    display: flex;
+    @include flex-direccion(column);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 50px;
+
+}
+
+.proyectos-flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    grid-template-areas: 
+    "titulo-proyecto1 titulo-proyecto2 titulo-proyecto3 titulo-proyecto4"
+    "img1 img2 img3 img4"
+    "titulo-proyecto5 titulo-proyecto6 titulo-proyecto7 titulo-proyecto8"
+    "img5 img6 img7 img8";
+}
+
+
+
+@media (max-width: 1650px){
+    .proyectos-flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    grid-template-areas: 
+    "titulo-proyecto1 titulo-proyecto2" 
+    "img1 img2" 
+    "titulo-proyecto3 titulo-proyecto4"
+    "img3 img4"
+    "titulo-proyecto5 titulo-proyecto6" 
+    "img5 img6" 
+    "titulo-proyecto7 titulo-proyecto8"
+    "img7 img8";
+
+    }
+}
+
+@media (max-width: 1017px){
+    .proyectos-flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    grid-template-areas: 
+    "titulo-proyecto1"  
+    "img1"
+    "titulo-proyecto2" 
+    "img2" 
+    "titulo-proyecto3" 
+    "img3" 
+    "titulo-proyecto4"
+    "img4"
+    "titulo-proyecto5"  
+    "img5" 
+    "titulo-proyecto6"
+    "img6" 
+    "titulo-proyecto7" 
+    "img7" 
+    "titulo-proyecto8"
+    "img8";
+
+    }
+}
+
+.img1 {
+    grid-area: img1;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in;
+        &:hover {
+            transform: scale(1.1);
+        }
+}
+
+.img2 {
+    grid-area: img2;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in;
+        &:hover {
+            transform: scale(1.1);
+        }
+}
+
+.img3 {
+    grid-area: img3;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in;
+        &:hover {
+            transform: scale(1.1);
+        }
+}
+
+.img4 {
+    grid-area: img4;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in;
+        &:hover {
+            transform: scale(1.1);
+        }
+}
+
+.img5 {
+    grid-area: img5;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in;
+        &:hover {
+            transform: scale(1.1);
+        }
+}
+
+.img6 {
+    grid-area: img6;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in;
+        &:hover {
+            transform: scale(1.1);
+        }
+}
+
+.img7 {
+    grid-area: img7;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in;
+        &:hover {
+            transform: scale(1.1);
+        }
+}
+
+.img8 {
+    grid-area: img8;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in;
+        &:hover {
+            transform: scale(1.1);
+        }
+}
+
+.titulo-proyecto1 {
+    grid-area: titulo-proyecto1;
+    text-align: center;
+    align-content: center;
+}
+
+.titulo-proyecto2 {
+    grid-area: titulo-proyecto2;
+    text-align: center;
+    align-content: center;
+}
+
+.titulo-proyecto3 {
+    grid-area: titulo-proyecto3;
+    text-align: center;
+    align-content: center;
+}
+
+.titulo-proyecto4 {
+    grid-area: titulo-proyecto4;
+    text-align: center;
+    align-content: center;
+}
+
+.titulo-proyecto5 {
+    grid-area: titulo-proyecto5;
+    text-align: center;
+    align-content: center;
+}
+
+.titulo-proyecto6 {
+    grid-area: titulo-proyecto6;
+    text-align: center;
+    align-content: center;
+}
+
+.titulo-proyecto7 {
+    grid-area: titulo-proyecto7;
+    text-align: center;
+    align-content: center;
+}
+
+.titulo-proyecto8 {
+    grid-area: titulo-proyecto8;
+    text-align: center;
+    align-content: center;
+}
+
+.img-proyectos {
+    width: 45vh;
+    height: auto;
+
+}
+
+.logos-flex-programaciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 40vh;
+     ul {
+     display: flex;
+     @include flex-direccion(row);
+        li {
+        padding: 10px 35px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 2px 2px 6px rgba(0,0,0,0.2); 
+        transition: background-color 0.3s;
+        }
+    }
+}
+
+@media (max-width: 856px) {
+    .logos-flex-programaciones{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 935px) {
+    .logos-flex-programaciones ul{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+}
+
+.logos-flex-contacto {
+    @extend .logos-flex-programaciones;
+    border-radius: 40px;
+}
+
+
+@media (max-width: 856px) {
+    .logos-flex-contacto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        border-radius: 40px;
+            ul{
+            display: flex;
+            @include flex-direccion(row);
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            border-radius: 40px;
+        }
+    }
+}
+
+@media (max-width: 510px) {
+    .logos-flex-contacto{
+        display: flex;
+        @include flex-direccion(column);
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        padding: 40px;
+            ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            border-radius: 40px;
+        }
+    }
+}
+
+#fondo-index {
+    background-image: url('img/fondo-index.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: changeBG 40s normal;
+}
+
+@keyframes changeBG {
+    0% {
+        background-image: url('img/fondo-index.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    20% {
+        background-image: url('img/fondo-proyectos.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    40% {
+        background-image: url('img/fondo-quienes-somos.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    60% {
+        background-image: url('img/fondo-programaciones.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    80% {
+        background-image: url('img/fondo-contacto.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    100% {
+        background-image: url('img/fondo-index.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+#fondo-proyectos {
+    background-image: url('img/fondo-proyectos.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#fondo-quienessomos {
+    background-image: url('img/fondo-quienes-somos.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#fondo-programaciones {
+    background-image: url('img/fondo-programaciones.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#fondo-contacto {
+    background-image: url('img/fondo-contacto.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.img-index-centro{
+    width: 70vh;
+    height: auto;
+    }
+
+@media (max-width: 600px){
+    .img-index-centro{
+    max-width: 100%; 
+    height: auto;    
+    display: block; 
+    }
+}
+
+.quienes-somos-flex {
+    display: flex;
+    @include flex-direccion(column);
+}
+
+.img-quienessomos-centro{
+    width: 70vh;
+    height: auto;
+    transition: all 0.3s ease-in;
+        &:hover {
+            transform: scale(0.9);
+        }
+}
+
+
+@media (max-width: 658px){
+    .img-quienessomos-centro{
+    max-width: 100%; 
+    height: auto;    
+    display: block; 
+    }
+}
+
+.logo-redes{
+    width: 20vh;
+    height: auto; 
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;;
+        &:hover {
+            transform: scale(0.9);
+        }
+}

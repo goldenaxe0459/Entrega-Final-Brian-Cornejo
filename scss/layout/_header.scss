@@ -1,0 +1,57 @@
+$fondo-oscuro: black;
+$fondo-blanco: white;
+$fondo-rojo: red;
+
+.header {
+    top: 0;
+    padding: 20px;
+    margin: 0px;
+    background-color: $fondo-oscuro;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 0;
+    padding: 0;
+    background-color: $fondo-oscuro;
+        li a {
+        background-color: $fondo-blanco;    
+        color: $fondo-oscuro;               
+        padding: 10px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.2s ease-in-out;
+            &:hover {
+            background-color: $fondo-oscuro;
+            color: white;
+            box-shadow: 2px 2px 6px white;
+            }
+     }
+}
+
+#contacto {
+    background-color: $fondo-blanco;
+    &:hover {
+        background-color: $fondo-rojo;
+    }
+}
+
+@media (max-width: 1017px) {
+    .menu{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    }
+}
+
+@media (max-width: 658px){
+    .menu{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    }
+}

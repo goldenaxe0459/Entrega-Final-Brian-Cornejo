@@ -1,0 +1,112 @@
+$fondo-oscuro: black;
+$texto-blanco: white;
+
+h1 {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: $texto-blanco;
+    background-color: black;
+    font-size: 40px;
+}
+
+@media(max-width: 856px) {
+    h1 {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: $texto-blanco;
+    background-color: $fondo-oscuro;
+    font-size: 30px;
+    }
+    
+}
+
+
+h2 {
+    display: inline;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: $texto-blanco;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    display: inline;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: $texto-blanco;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+p {
+    display: inline;
+    font-family: "Mozilla Headline", sans-serif;
+    font-optical-sizing: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: $texto-blanco;
+    font-size: 20px;
+
+}
+
+.p-index {
+    font-family: "Mozilla Headline", sans-serif;
+    font-optical-sizing: auto;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: $texto-blanco;
+}
+
+.p-footer {
+    display: block;
+    font-family: "Mozilla Headline", sans-serif;
+    font-optical-sizing: auto;
+    text-align: center;
+    font-size: 20px;
+    text-align: center;
+    background-color: $fondo-oscuro;
+    margin: 0;
+    padding: 0;
+}
+
+.texto-proyecto {
+    display: flex;
+    flex-direction: column;
+    font-family: "Mozilla Headline", sans-serif;
+    font-optical-sizing: auto;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: $texto-blanco;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 0 50px;
+}
+
+.texto-correo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 0 50px;
+
+}
+
+@media (max-width: 422px) {
+    .texto-correo {
+    display: flex;
+    flex-direction: column;
+    color: $texto-blanco;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 0 50px;
+    }
+}
